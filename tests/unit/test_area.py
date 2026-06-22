@@ -1,5 +1,6 @@
 import pytest
-from src.area import calculate_area_square
+# from src.area import calculate_area_square
+from src.area import calculate_area_rectangle
 
 def test_calculate_area_square():
     assert calculate_area_square(2) == 6
