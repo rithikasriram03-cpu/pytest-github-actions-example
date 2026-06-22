@@ -1,6 +1,6 @@
 import pytest
-#from src.area import calculate_area_square
-from src.area_new import calculate_area_square
+from src.area import calculate_area_square
+
 
 def test_calculate_area_square():
     assert calculate_area_square(2) == 6
@@ -10,11 +10,15 @@ def test_calculate_area_square_negative():
     with pytest.raises(TypeError):
         calculate_area_square(-2)
 
-def test_calculate_area_square_string(:
+def test_calculate_area_square_string():
     with pytest.raises(TypeError):
         calculate_area_square("2")
 
 def test_calculate_area_square_list():
     with pytest.raises(TypeError):
         calculate_area_square([2])
+
+def test_file_read():
+    open("missing_file.txt")
+
         
