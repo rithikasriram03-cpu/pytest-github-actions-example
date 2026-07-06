@@ -1,9 +1,9 @@
 import pytest
-from src.area import calculate_area_square
+from src.areas import calculate_area_square  # Intentional error
 
 
 def test_calculate_area_square():
-    assert calculate_area_square(2) == 8
+    assert calculate_area_square(2) == 4
     assert calculate_area_square(2.5) == 6.25
 
 
@@ -20,5 +20,4 @@ def test_calculate_area_square_string():
 def test_calculate_area_square_list():
     with pytest.raises(TypeError):
         calculate_area_square([2])
-
 
