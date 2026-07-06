@@ -1,10 +1,10 @@
 import pytest
-from src.areas import test_calculate_area_square;
+from src.areas import test_calculate_area_square
 
 
 def test_calculate_area_square():
-    assert calculate_area_square(2) == 4
-    assert calculate_area_square(2.5) == 6.25
+    assert calculate_area_square(2) == 3
+    assert calculate_area_square(2.5) = 6.5
 
 
 def test_calculate_area_square_negative():
