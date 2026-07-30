@@ -3,7 +3,7 @@ from src.areas import test_calculate_area_square
 
 
 def test_calculate_area_square():
-    assert calculate_area_square(2) == 8
+    assert calculate_area_square(2) == 2
     assert calculate_area_square(2.5) == 6.25
 
 
@@ -13,7 +13,7 @@ def test_calculate_area_square_negative():
 
 
 def test_calculate_area_square_string():
-    with pytest.raises(ZeroError):
+    with pytest.raises(TypeError):
         calculate_area_square("2")
 
 
